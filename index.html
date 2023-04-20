@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Top 20 Patterns in Java</title>
+    <link rel="icon" href="./icon.png">
+  </head>
+  <body>
+
+    
+    <button class="nav-btn open-btn">
+      <i class="fas fa-bars" style="font-size: 33px;color:rgb(1, 78, 61)"></i>
+    </button>
+
+    <p style="font-weight: 660; font-size: 15px; color: #4b994b; background-color: #362b47; width: 50%; text-align: center">Use Desktop Mode for better Experience</p>
+    <div class="navLogo" id="home">
+      <img src="./21004063.jpg" alt="Logo" class="logo">
+    </div>
+    <p style="font-weight: 660; font-size: 30px; color: #230054; border-bottom: 1px solid rgb(1, 78, 61);">Top 20 Patterns in Java: Star, Number and Character</p>
+    
+    <section class="main-section" id="p1">
+      <header> Right Triangle Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
+    * * * * * *
+    * * * * * * * 
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  for(int i=1;i<=n;i++){
+                      for(int j=1;j<=i;j++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/90a9eb31a79fc4ca51d3cc43078902661eb40d3d/Right%20Triangle%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     
+     <section class="main-section" id="p2">
+      <header> Left Triangle Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+                *
+              * *
+            * * *
+          * * * *
+        * * * * *
+      * * * * * *
+    * * * * * * * 
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  int space=n-1;
+                  for(int i=1;i<=n;i++){
+                      for(int j=1;j<=space;j++){
+                          System.out.print(" ");
+                      }
+                      space--;
+                      for(int k=1;k<=i;k++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/913c9670f8fcc1f6c9aac47b9f9cc8f3817b084a/Left%20Triangle%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p3">
+      <header> Right down Mirror Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+    * * * * * *
+      * * * * *
+        * * * *
+          * * *
+            * * 
+              *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  int space=0;
+                  for(int i=1;i<=n;i++){
+                      for(int j=1;j<=space;j++){
+                          System.out.print(" ");
+                      }
+                      space++;
+                      for(int j=0;j<=n-i;j++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/43beb892f30265e33e65656a227c6df7ee2be2da/Right%20down%20Mirror%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p4">
+      <header> Left down Mirror Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+    * * * * * * 
+    * * * * *
+    * * * *
+    * * * 
+    * * 
+    *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  for(int i=1;i<=n;i++){
+                      for(int j=0;j<=n-i;j++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/701af68faf0b4c75ae4961ff200733c672a9e81a/Left%20down%20Mirror%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p5">
+      <header> Pyramid Pattern </header>
+      <article> 
+        <pre class="diagram">
+        * 
+       * * 
+      * * * 
+     * * * * 
+    * * * * *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  for (int i=0;i<=n-1;i++){
+                      for (int j=n-i;j>1;j--){ 
+                          System.out.print(" ");
+                      }  
+                      for (int j=0;j<=i;j++){ 
+                          System.out.print("* "); 
+                      } 
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/2aff2173eb3c0bb52d1155b299597f4b8d851c63/Pyramid%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p6">
+      <header> Inverted Pyramid Pattern </header>
+      <article> 
+        <pre class="diagram">
+    * * * * *
+     * * * * 
+      * * * 
+       * *
+        * 
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  for (int i=0;i<=n-1;i++){
+                      for (int j=0;j<=i;j++){ 
+                          System.out.print(" ");
+                      }  
+                      for (int k=0;k<=n-i-1;k++){ 
+                          System.out.print("* "); 
+                      } 
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+          
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/a1d5243d0bbf747ca8486ffb2a1f0563dcfe9c4d/Inverted%20Pyramid%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p7">
+      <header> Right Pascal’s Triangle </header>
+      <article> 
+        <pre class="diagram">
+    * 
+    * * 
+    * * * 
+    * * * * 
+    * * * * * 
+    * * * * 
+    * * * 
+    * * 
+    * 
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.Scanner;
+          public class Test
+          {
+              public static void main(String[] args)
+              {
+                  Scanner sc = new Scanner(System.in);
+                  System.out.print("Enter number of rows for one half: ");
+                  int n = sc.nextInt();        
+                  for (int i=0;i<=n-1;i++){
+                      for (int j=0;j<=i;j++){ 
+                          System.out.print("*"); 
+                      } 
+                      System.out.println(); 
+                  } 
+                  for (int i=n-1;i>=0;i--){
+                      for(int j=0;j<=i-1;j++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+                    
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/8e6d5464fae933a84a11c78ba56270dd96707f31/Right%20Pascal%E2%80%99s%20Triangle.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p8">
+      <header> Left Pascal’s Triangle </header>
+      <article> 
+        <pre class="diagram">
+            *
+          * *
+        * * *
+      * * * *
+    * * * * *
+      * * * *
+        * * *
+          * *
+            *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows for one half: ");
+                  int n = sc.nextInt();
+                  int space=n-1;
+                  for(int i=1;i<=n;i++){
+                      for(int k=1;k<=space;k++){
+                          System.out.print(" ");
+                      }
+                      space--;
+                      for(int k=1;k<=i;k++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  space=1;
+                  for(int i=1;i<=n;i++){
+                      for(int k=1;k<=space;k++){
+                          System.out.print(" ");
+                      }
+                      space++;
+                      for(int k=1;k<=n-i;k++){
+                          System.out.print("*");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+                    
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/e962e7ed66d68305108a410f48dfc9c5543e0a24/Left%20Pascal%E2%80%99s%20Triangle.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+     
+     <section class="main-section" id="p9">
+      <header> Diamond Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+            *
+          * * *
+        * * * * *
+      * * * * * * *
+    * * * * * * * * *
+      * * * * * * *
+        * * * * *
+          * * *
+            *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class Test {
+            public static void main(String[] args) {
+                System.out.print("Enter number of rows for one half: ");
+                Scanner sc= new Scanner(System.in);
+                int n = sc.nextInt();
+                int space=n-1;
+                for(int i=1;i<=n;i++){
+                    for(int j=1;j<=space;j++){
+                        System.out.print(" ");
+                    }
+                    space--;
+                    for(int k=1;k<=2*i-1;k++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                space=1;
+                for(int i=1;i<=n;i++){
+                    for(int j=1;j<=space;j++){
+                        System.out.print(" ");
+                    }
+                    space++;
+                    for(int k=1;k<=2*(n-i)-1;k++){
+                        System.out.print("*");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+                sc.close();
+            }
+          } 
+                    
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/f790a3350b7281624d0888dd7e31c86f434a580f/Diamond%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p10">
+      <header> Hollow Diamond Star Pattern </header>
+      <article> 
+        <pre class="diagram">
+           *
+          * *
+         *   *
+        *     *
+       *       *
+        *     *
+         *   *
+          * *
+           *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.Scanner;
+          public class p10
+          {
+              public static void main(String[] args){
+              Scanner sc = new Scanner(System.in);
+              System.out.print("Enter number of rows for one half: ");
+              int n = sc.nextInt();    
+              for (int i=1;i<=n;i++){
+                  for (int j=n;j>i;j--){
+                      System.out.print(" ");
+                  }
+                  System.out.print("*");
+                  for (int k=1;k<=2*(i-1)-1;k++){ 
+                      System.out.print(" "); 
+                  } 
+                  if( i==1){ 
+                      System.out.println(); 
+                  } 
+                  else{ 
+                      System.out.println("*"); 
+                  } 
+              } 
+              for (int i=n-1;i>=1;i--){
+                  for (int j=n;j>i;j--){
+                      System.out.print(" ");
+                  }
+                  System.out.print("*");
+                  for (int k=1;k<=2*(i-1)-1;k++){
+                      System.out.print(" ");
+                  }
+                  if( i==1){
+                      System.out.println();
+                  }
+                  else{
+                      System.out.println("*");
+                  }
+              }
+              System.out.println();
+              sc.close();
+              }
+          }
+                    
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/bbcd38131197fe6db712befe5273b26ca1d4efa8/Hollow%20Diamond%20Star%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p11">
+      <header> Hollow Square Pattern </header>
+      <article> 
+        <pre class="diagram">
+          * * * * *
+          *         *
+          *         *
+          *         *
+          * * * * *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class p11 {
+            public static void main(String[] args) {
+                Scanner sc= new Scanner(System.in);
+                System.out.print("Enter number of rows: ");
+                int n = sc.nextInt();
+                for(int i=1;i<=n;i++) {
+                    if ((i == 1 || i == n)) {
+                        for (int j = 1; j <= n; j++) {
+                            System.out.print("*");
+                        }
+                    }
+                    else {
+                        for (int j = 1; j <= n; j++) {
+                            if(j==1||j==n) {
+                                System.out.print("*");
+                            }
+                            else {
+                                System.out.print(" ");
+                            }
+                        }
+                    }
+                    System.out.println();
+                    sc.close();
+                }
+            }
+          }     
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/2b4e04b5946697687445b3b4aac7b5945bd10157/Hollow%20Square%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p12">
+      <header> Alphabet X Pattern </header>
+      <article> 
+        <pre class="diagram">
+        *   *
+         * * 
+          *  
+         * * 
+        *   *
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class p12 {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter number of rows: ");
+                int n = sc.nextInt();
+                for(int i=0;i<=n-1;i++){
+                    for(int j=0;j<=n-1;j++){
+                        if(i==j || i+j==n-1){
+                            System.out.print("*");
+                        }
+                        else{
+                            System.out.print(" ");
+                        }
+                    }
+                    System.out.println();
+                    sc.close();
+                }
+            }
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/48aed0b6688b373ebf59ce8cb49d842989a0e26d/Alphabet%20X%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p13">
+      <header> Alphabet Z Pattern </header>
+      <article> 
+        <pre class="diagram">
+      *****
+          *
+         *
+        *
+      *****
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class p13 {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter number of rows: ");
+                int n = sc.nextInt();
+                int space = n - 1;
+                for (int i = 1; i <= n; i++) {
+                    if (i == 1 || i == n) {
+                        for (int j = 1; j <= n; j++) {
+                            System.out.print("*");
+                        }
+                        System.out.println();
+                    } else {
+                        for (int j = 1; j <= space-1; j++) {
+                            System.out.print(" ");
+                        }
+                        space--;
+                        System.out.print("*");
+                        System.out.println();
+                    }
+                }
+                System.out.println();
+                sc.close();
+            }
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/b2c323826acf868093b52e952eaf5c9f54223712/Alphabet%20Z%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p14">
+      <header> Simple number Pattern </header>
+      <article> 
+        <pre class="diagram">
+      1 
+      1 2 
+      1 2 3 
+      1 2 3 4 
+      1 2 3 4 5
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class p14 {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  for(int i=1;i<=n;i++){
+                      int count =1;
+                      for(int j=1;j<=i;j++){
+                          System.out.print(count+" ");
+                          count++;
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/87133b8a4c973b6472933c49230993b030b6c5b2/Simple%20number%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p15">
+      <header> Numerical Pyramid Pattern </header>
+      <article> 
+        <pre class="diagram">
+                1 
+             2 3 2
+          3 4 5 4 3
+       4 5 6 7 6 5 4
+    5 6 7 8 9 8 7 6 5
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          public class p15 {
+              public static void main(String[] args) {
+                  Scanner sc= new Scanner(System.in);
+                  System.out.print("Enter number of rows: ");
+                  int n = sc.nextInt();
+                  int space=n-1;
+                  for(int i=1;i<=n;i++){
+                      int count=i;
+                      for(int j=1;j<=space;j++){
+                          System.out.print("  ");
+                      }
+                      space--;
+                      for(int k=1;k<=(2*i-1)/2;k++){
+                          System.out.print(count++ + " ");
+                      }
+                      for(int k=(2*i-1)/2+1;k>=1;k--){
+                          System.out.print(count-- + " ");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/a013d118432a3efc6ba3fc20072f7bf8646c7b82/Numerical%20Pyramid%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p16">
+      <header> Numerical Diamond Pattern  </header>
+      <article> 
+        <pre class="diagram">
+             1
+          2 1 2
+       3 2 1 2 3
+    4 3 2 1 2 3 4
+       3 2 1 2 3
+          2 1 2
+             1
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          public class p16{            
+            public static void main(String[] args) {
+              Scanner sc= new Scanner(System.in);
+              System.out.print("Enter number of rows for one half: ");
+              int n = sc.nextInt();
+              for (int i=1;i<=n;i++)
+              {
+                  for (int j=1;j<=n-i;j++){ 
+                      System.out.print("  "); 
+                  } 
+                  for (int k=i;k>= 1;k--){
+                      System.out.print(k + " ");
+                  }
+                  for (int l=2;l<=i;l++){ 
+                      System.out.print(l + " "); 
+                  } 
+                  System.out.println(); 
+              } 
+              n=n-1;
+              for (int i=n;i>= 1;i--){
+                  for (int j=0;j<=n-i;j++){ 
+                      System.out.print("  "); 
+                  } 
+                  for (int k=i;k>=1;k--){
+                      System.out.print(k + " ");
+                  }
+                  for (int l=2;l<=i;l++){
+                      System.out.print(l + " ");
+                  }
+                  System.out.println();
+              }
+              System.out.println();
+              sc.close();
+          }
+        }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/ffc60707da15b0795315aaed99079e9c3f640461/Numerical%20Diamond%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p17">
+      <header> Binary Number Pattern  </header>
+      <article> 
+        <pre class="diagram">
+        10101
+        01010
+        10101
+        01010
+        10101
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.Scanner;
+          public class p17{  
+              public static void main(String[] args) {
+                  Scanner sc = new Scanner(System.in);
+                  System.out.print("Enter the number of rows: ");
+                  int n = sc.nextInt();
+                  int flag;
+                  for (int i=1;i<=n;i++) {
+                      if(i%2 == 0){
+                          flag = 0;
+                          for (int j=1;j<=n;j++){
+                              System.out.print(flag); 
+                              flag = (flag == 0)? 1 : 0;
+                          }
+                      }
+                      else{
+                          flag = 1; 
+                          for (int j=1;j<=n;j++){
+                              System.out.print(flag);
+                              flag = (flag == 0)? 1 : 0;
+                          }
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }   
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/1c27ed6981befb20a04ce4f9d9954c680f726e58/Binary%20Number%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p18">
+      <header> Pascal’s Triangle  </header>
+      <article> 
+        <pre class="diagram">
+              1
+           1   1
+         1   2   1
+       1   3   3   1
+    1   4   6   4   1
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.*;
+          class Test {
+              public static int factorial(int i)
+              {
+                  if (i == 0)
+                      return 1;
+                  return i * factorial(i - 1);
+              }
+              public static void main(String[] args)
+              {
+                  Scanner sc = new Scanner(System.in);
+                  System.out.print("Enter the number of rows: ");
+                  int n = sc.nextInt();
+            
+                  for (int i=0;i<=n;i++) {
+                      for (int j=0;j<=n-i;j++) {
+                          System.out.print(" ");
+                      }
+                      for (int j=0;j<=i;j++) {
+                          System.out.print(" "+ factorial(i) / (factorial(i - j) * factorial(j)));
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          } 
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/0916a77f27c3b03f3a1dcc4835a964ce73243320/Pascal%E2%80%99s%20Triangle.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p19">
+      <header> Triangle Character Pattern  </header>
+      <article> 
+        <pre class="diagram">
+          A 
+         A B 
+        A B C 
+       A B C D 
+      A B C D E 
+    A B C D E F
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.Scanner;
+          public class p19 {        
+              public static void main(String[] args){
+                  Scanner sc = new Scanner(System.in);
+                  System.out.print("Enter the number of rows: ");
+                  int n = sc.nextInt();
+                  for (int i=0;i<=n;i++){ 
+                      int alphabet = 65; 
+                      for (int j=n;j>i;j--){
+                      System.out.print(" ");
+                      }
+                      for (int k=0;k<=i;k++){
+                          System.out.print((char) (alphabet + k) + " ");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="https://github.com/Sushavan20/Basic-Pattern-in-Java/blob/3081551a6986b4c29fa1b5ab0beaa54817f8d164/Triangle%20Character%20Pattern.java"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+     <section class="main-section" id="p20">
+      <header> K Shape Character Pattern  </header>
+      <article> 
+        <pre class="diagram">
+        A B C D E F 
+        A B C D E 
+        A B C D 
+        A B C 
+        A B 
+        A 
+        A 
+        A B 
+        A B C 
+        A B C D 
+        A B C D E 
+        A B C D E F
+        </pre> 
+        <code class="heading" style="border-bottom: 1px solid rgb(16, 5, 89);">Code in java</code>
+        <br>
+        <pre class="bash">
+      
+          import java.util.Scanner;
+          public class p20{
+              public static void main(String[] args){
+                  Scanner sc = new Scanner(System.in);
+                  System.out.print("Enter the number of rows: ");
+                  int n = sc.nextInt();
+                  n=n/2;
+                  for (int i=n;i>=0;i--){
+                      int alphabet = 65;
+                      for (int j=0;j<=i;j++){
+                          System.out.print((char) (alphabet + j) + " ");
+                      }
+                      System.out.println();
+                  }
+                  for (int i = 0; i<= 5; i++){
+                      int alphabet = 65;
+                      for (int j=0;j<=i;j++){
+                          System.out.print((char) (alphabet + j) + " ");
+                      }
+                      System.out.println();
+                  }
+                  System.out.println();
+                  sc.close();
+              }       
+          }
+                            
+          </pre>
+          <code class="heading">
+            <a href="./Maintenance Page/entryindex.html"><button class="link"><span>Learn More </span></button></a>
+            <a href="#"><button class="link"><span>Github Source Code </span></button></a>
+          </code>
+        </article>
+     </section>
+
+
+    <section class="main-section" id="end">
+      <header>  Join the discussion </header><br>
+      &nbsp;
+      <a href="https://github.com/Sushavan20/Top-20-Pattern-in-JAVA"><i class="fa fa-file-code-o w3-xxlarge w3-text-black"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="mailto:sushavan.karmakar@gmail.com"><i class="fa fa-envelope w3-xxlarge w3-text-deep-purple"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://github.com/Sushavan20" target="blank"><i class="fa fa-github w3-xxlarge w3-text-black"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/sushavan-karmakar-7965a2195/" target="blank"><i class="fa fa-id-badge w3-xxlarge w3-text-teal"></i></a>
+      <br><br>
+      <article> 
+        <a href="./ContactPage/entryindex.html" target="blank" style="font-weight: 660; font-size: 18px; color: #881906">Contact Me</a>
+      </article>
+      <br>
+    </section>
+
+    <center>
+      <p style="font-weight: 660;">&copy; copyright  </p>
+      <img src="./21004063.jpg" style="width: 70px; height: 56px">
+      <p style="font-weight: 660;">designed by <a href="https://sushavan20.github.io/PortfolioSK20/"><span>Sushavan Karmakar</span></a></p>
+    </center>
+     
+
+
+    <div class="nav nav-black">
+      <div class="nav nav-red">
+        <div class="nav nav-white">
+          <button class="nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+
+          <img src="./21004063.jpg" alt="Logo" class="logo">
+
+          <ul class="list">
+            <li><a class="nav-link" href="#home"> HOME </a></li>
+            <li><a class="nav-link" href="#end"> Thank You! </a></li>
+            <li>-------------------------------------------------</li>
+            <li><a class="nav-link" href="#p1"> Right Triangle Star Pattern </a></li>
+            <li><a class="nav-link" href="#p2"> Left Triangle Star Pattern </a></li>
+            <li><a class="nav-link" href="#p3"> Right down Mirror Star Pattern </a></li>
+            <li><a class="nav-link" href="#p4"> Left down Mirror Star Pattern </a></li>
+            <li><a class="nav-link" href="#p5"> Pyramid Pattern </a></li>
+            <li><a class="nav-link" href="#p6"> Inverted Pyramid Pattern </a></li>
+            <li><a class="nav-link" href="#p7"> Right Pascal’s Triangle </a></li>
+            <li><a class="nav-link" href="#p8"> Left Pascal’s Triangle </a></li>
+            <li><a class="nav-link" href="#p9"> Diamond Star Pattern </a></li>
+            <li><a class="nav-link" href="#p10"> Hollow Diamond Star Pattern </a></li>
+            <li><a class="nav-link" href="#p11"> Hollow Square Pattern </a></li>
+            <li><a class="nav-link" href="#p12"> Alphabet X Pattern </a></li>
+            <li><a class="nav-link" href="#p13"> Alphabet Z Pattern </a></li>
+            <li><a class="nav-link" href="#p14"> Simple number Pattern </a></li>
+            <li><a class="nav-link" href="#p15"> Numerical Pyramid Pattern </a></li>
+            <li><a class="nav-link" href="#p16"> Numerical Diamond Pattern </a></li>
+            <li><a class="nav-link" href="#p17"> Binary Number Pattern </a></li>
+            <li><a class="nav-link" href="#p18"> Pascal’s Triangle </a></li>
+            <li><a class="nav-link" href="#p19"> Triangle Character Pattern </a></li>
+            <li><a class="nav-link" href="#p20"> K Shape Character Pattern </a></li>
+            <li>--------------------------------------------------</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
